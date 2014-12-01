@@ -1,0 +1,42 @@
+Installation
+
+ETAPE 1
+
+Après avoir installé PhantomJs (http://phantomjs.org/download.html) et Node.js (http://nodejs.org/download), 
+on installe le lien qui permettra de faire un pont entre Phantomjs et Node.js avec la commande suivante : 
+
+-	npm install node-phantom-simple
+
+Une fois les installations effectuées, on lance notre « mini-serveur » :
+
+- node dashcast.js
+
+ETAPE 2
+
+Notre « mini-serveur » tourne. Dans cette deuxième étape nous allons créer la capture d’écran d’un site.  
+L’utilisateur va définir les paramètres suivants :
+
+-	width (largeur de l’image)
+-	height (la hauteur de l’image)
+-	address (l’URL du site HTML)
+-	pahtimg (le nom de l’image qu’on crée)
+
+Allez dans votre navigateur web et tapez les requêtes suivantes :
+-	localhost :1422/width=1280&height=1200&address=siteURL&pathimg=nomimage.jpg
+
+ETAPE 3
+
+Pour cette troisième étape, nous allons configuré notre Chromecast afin qu’il puisse se connecter sur le même WIFI. 
+
+1) Branchement du Chromecast au port HDMI de l’écran TV. 
+2) Téléchargez l’application Chromecast sur votre ordinateur.
+3) Connectez sur la WIFI de votre appareil et configurez votre Chromecast pour qu’il être connecté sur votre WIFI.
+
+ETAPE 4
+
+Dans cette étape, on va installer notre Dashkiosh qui nous permettra d’envoyer notre image sur un écran TV via le Chromecast. (http://dashkiosk.readthedocs.org/en/latest/install.html) 
+
+Une fois installé, on va lancer notre Dashkiosk avec la commande suivante : 
+- node server.js –environment production –chromecast.enabled –chromecast.receiver http://monadresseIP/receiver
+
+
