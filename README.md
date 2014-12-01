@@ -2,10 +2,10 @@ DashCast
 
 Le Chromecast est un appareil lecteur de flux multimédia en temps réel. Mais le CPU de cet appareil est très limité et ne fonctionne pas vraiment quand on souhaite afficher une page HTML qui contient beaucoup de Javascript.
 
-Notre partenaire utilise Kibana. Il génère en temps réel un tableau de bord mais rencontre les problèmes suivants :
+Exemple : pour génèrer en temps réel un tableau de bord on rencontre les problèmes suivants :
 
-Affichage manquant des courbes
-Titre du dashboard qui n'est pas affiché à l'instant T.
+- Affichage manquant des courbes
+- Titre du dashboard qui n'est pas affiché à l'instant T.
 
 Pour résoudre cette problématique, DashCast est là !
 
@@ -15,8 +15,7 @@ Grâce à PhantomJs, nous récupérons des screenshots d'une page HTML puis Node
 
 Dans le Dashkiosk il y a :
 
-Un admin qui contrôle les écrans en leur envoyant l'URL qu'ils doivent afficher en temps réel.
-
-Un récepteur (le Chromecast) qui est connecté via le WIFI. Une fois configuré, il attend l'action de l'admin afin d'afficher l'URL puis l'envoie sur un écran TV.
+- Un admin qui contrôle les écrans en leur envoyant l'URL qu'ils doivent afficher en temps réel.
+- Un récepteur (le Chromecast) qui est connecté via le WIFI. Une fois configuré, il attend l'action de l'admin afin d'afficher l'URL puis l'envoie sur un écran TV.
 
 ========
