@@ -18,4 +18,5 @@ Dans le Dashkiosk il y a :
 Un admin qui contrôle les écrans en leur envoyant l'URL qu'ils doivent afficher en temps réel.
 
 Un récepteur (le Chromecast) qui est connecté via le WIFI. Une fois configuré, il attend l'action de l'admin afin d'afficher l'URL puis l'envoie sur un écran TV.
+
 ========
